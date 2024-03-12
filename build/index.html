@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0F1KA3sDlUmG5Cerqzq2Pe2PEH75j4wJLqoRv4f5ijy9CC5b2woiN0lFsoefx0g" crossorigin="anonymous">
+    <style>
+        /* Custom styles for the animated background */
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<!-- Background Video -->
+<div id="background-video"></div>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Your Website</a>
+    </div>
+</nav>
+
+<!-- Accordion Section -->
+<div class="container mt-5">
+    <div class="accordion" id="accordionExample">
+        <!-- Donate -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Donate
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                    Content for Donate section goes here.
+                </div>
+            </div>
+        </div>
+
+        <!-- 2023 Recap -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2023 Recap
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                <div class="accordion-body">
+                    Content for 2023 Recap section goes here.
+                </div>
+            </div>
+        </div>
+
+        <!-- Volunteer -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Volunteer
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                <div class="accordion-body">
+                    Content for Volunteer section goes here.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-4bqlqnA1VGPGJ3CyCkFD0ZGx+MKbTAoINMlt7lg7YqS3JAxpxn9hWYrsjsLkRiS+" crossorigin="anonymous"></script>
+<!-- YouTube iframe API -->
+<script>
+    // Load the YouTube Player API asynchronously
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('background-video', {
+            videoId: 'VIDEO_ID', // Replace VIDEO_ID with your YouTube video ID
+            playerVars: {
+                'autoplay': 1,
+                'controls': 0,
+                'loop': 1,
+                'showinfo': 0,
+                'mute': 1,
+                'playlist': 'VIDEO_ID'
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.ENDED) {
+            player.playVideo(); // Loop the video when it ends
+        }
+    }
+</script>
+</body>
+</html>
