@@ -18,41 +18,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Custom styles for the entire page background */
-        body {
-            background-color: #f0f0f0; /* Change this value to the desired background color */
-        }
-        /* Custom styles for the jumbotron */
-        .jumbotron {
-            height: 100vh;
-            background: #000; /* Fallback color */
-            background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with the path to your image */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-align: center;
-            position: relative;
-        }
-        .jumbotron #player {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .carousel-item img {
-            height: 800px; /* Adjust height as needed */
-            object-fit: cover;
-        }
-        .carousel-text {
-            background-color: #f8f9fa;
-            padding: 20px;
-        }
-    </style>
+
 </head>
 <body>
 <!-- Jumbotron with YouTube video -->
@@ -116,120 +82,43 @@
             </h2>
 
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-                <p>We had 6 campers in our cabin and I thought it'd be best to provide you a quick overview of how the week went for each of them.</p>
                     <div class="accordion-body">
                     <!-- Carousel Section -->
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <!-- Kaden -->
-                            <div class="carousel-item active">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="img/fake01.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="carousel-text">
-                                                <h5>Kaden</h5>
-                                                <p>Kaden and his two brothers (Kai and Kaleb) have been coming the past three years - Kaden turned 11 this year, meaning that this was his graduation year from camp. Kaden and his brothers are all in different foster families and they recently found out that they're likely not going to be reunited. While they do see each other outside of camp, camp is one the only time they get to spend an extended amount of time together. Kaden also just changed foster homes 6 months ago and, based on what they sent him to camp with, I gather that it isn't the greatest placement. While that is a lot of baggage to bring into camp, while with us Kaden had an absolute blast. We had a hip hop dance instructor do one of our evening activities and he jumped right into all of the challenges and absolutely killed it. He had a bit of a rivalry with another camper named Jackson but we helped Kaden channel some of that aggression into sports and, by the end of camp, it was great to see him using some of the energy that went to outbursts get channeled into kickball or a footrace.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/promo1.JPG" class="d-block w-100" alt="Promo 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/promo2.JPG" class="d-block w-100" alt="Promo 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/promo3.JPG" class="d-block w-100" alt="Promo 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/promo4.JPG" class="d-block w-100" alt="Promo 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/promo5.JPG" class="d-block w-100" alt="Promo 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/promo6.JPG" class="d-block w-100" alt="Promo 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/promo7.JPG" class="d-block w-100" alt="Promo 7">
                                 </div>
                             </div>
-                            <!-- Ethan -->
-                            <div class="carousel-item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="img/fake02.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="carousel-text">
-                                                <h5>Ethan</h5>
-                                                <p>Ethan has been with us since he was 7... this year he turned 11 making it his graduation year. He is small for his age and has always been the nice kid at camp who mostly entertained himself... what was awesome to see this year is just how much he has matured and developed a new found sense of confidence. And what's REALLY awesome is that he was able to socialize with the other kids in ways that he was just too nervous to do in years past. While I used to worry a bit for Ethan, given how quiet he used to be, he was firing on all cylinders at camp and I'm excited to see where he'll go in life. He was also adamant that he'd be back to volunteer when he's 16 and I'm hopeful he will reach back out.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Jackson -->
-                            <div class="carousel-item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="img/fake03.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="carousel-text">
-                                                <h5>Jackson</h5>
-                                                <p>Jackson was also a graduate who has been with us since he was 7... somewhere between his first and second year at camp, Jackson and his brother Logan were adopted by a family that attends Stone Church (the Church that sponsors and helps support logistics for our camp). He has always been athletically gifted and what was awesome about this year was that he's now using his athleticism to better integrate some of the kids who aren't at his level, which this week was often Aiden. Jackson is playing wide receiver for his local football team, based on the skills I saw at camp, I think he will make some waves in Illinois football when he gets to high school.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Brandon -->
-                            <div class="carousel-item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="img/fake04.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="carousel-text">
-                                                <h5>Brandon</h5>
-                                                <p>Brandon is 10 years old and this was his second year at camp. Last year he broke his arm right before camp but that didn't slow him down in the slightest... this year, we got to see Brandon unshackled from a cast and he was constantly hitting a ball or playing catch. Brandon is also surprisingly mature for his age and is always a camper I can count on to include some of the quieter or younger kids... I can't wait to see how much he changes by the time he comes back for his final year at camp next year. From what we know, Brandon has been in a really good home and he told us that next week he's going to find out if he's going to be adopted or in a guardianship with his foster parents. He also expressed interest in hanging out with me outside of camp on the bus ride home, which is something that I'm going to work with the camp director on. We used to have a formal mentorship program but we've struggled to get enough volunteers to support that year-round but I know that more informal arrangements are allowed so long as we work through the social worker and foster parents. Fingers crossed we can get something coordinated as I would really love to stay in touch with Brandon more frequently than just at camp.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Tommy -->
-                            <div class="carousel-item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="img/fake05.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="carousel-text">
-                                                <h5>Tommy</h5>
-                                                <p>Tommy was also a graduate and, while he wasn't able to go last year, has been at camp previously. He is currently living with his grandmother, who also attends Stone Church. His grandmother is a friend of my mother-in-law and, because of that, I do see Tommy a handful of times outside of camp. He's going through a particularly rough time in his life and I was told that he's been dealing with some anger issues; while we were a bit worried about how that would manifest itself at camp, by Wednesday he was goofing around and having fun just like the Tommy we remembered. In addition, I'm working with my mother-in-law to see if we can try to get a pool or beach day coordinated with Tommy and his older sister Sarah (who graduated last year) outside of camp. While that typically can be harder to do, it should be easier to make it happen with Tommy given the connections that already exist.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Nathan -->
-                            <div class="carousel-item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="img/fake06.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="carousel-text">
-                                                <h5>Nathan</h5>
-                                                <p>Nathan was also a graduate this year and it was his second year in my cabin with me. Last year he mostly kept to himself and focused on puzzles or arts/crafts. This year he came out of his shell a bit more, especially with the nerf guns we bought for the room. Each kid and counselor had their own, and nerf gun wars were a popular afternoon activity. Nathan jumped right in and was a part of strategizing the campers' plots to overthrow the cabin, and while all of those plots failed, it was awesome to see Nathan spread his wings in a new way.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                        <p>Text here.</p>
                 </div>
-                <p>As you'll notice, many of the campers above were graduates... because I have a good amount of experience, I usually get paired with the older kids who can be more challenging to manage.  We have the cutoff of 11 years of age at camp because, beyond that age, it becomes much more challenging to host the older campers with the younger ones.  There are volunteer groups that coordinate shorter weekend-long camps for kids once they are over the age of 11 so, if a former camper does express interest in attending those, we usually coordinate an introduction to one of those camps or encourage them to reach back out when they are legally old enough to come back and volunteer (16 with parental permission).  To help maintain contact with former campers, this year we also started a new tradition and wrote birthday cards for each graduate that we'll mail to them on their 12th - 18th birthdays... I'm really excited to see the impact that that will have, both from reminding former campers that we care about them and in helping more former campers come back as volunteers.</p>
-                <p>Outside of the campers who were in our cabin, I got a ton of time to meet and hang out with the 15+ other campers.  While I could probably go on for hours with all of the stories that we do have from the week, my favorite one that is not touched on above is that of Aubrie.  Aubrie is a 10-year-old first time camp attendee and, for the first two days, she was very quiet and mostly hung out by herself on the periphery.  But as she made some friends, she began to open up and it culminated in her having enough courage to play the piano at the talent show on Thursday... It was her first time playing in front of people and she ABSOLUTELY CRUSHED IT!</p>
             </div>
         </div>
 
@@ -247,7 +136,7 @@
                  aria-labelledby="headingThree">
                 <div class="accordion-body text-center">
                     <!-- YouTube Video -->
-                    <div class="embed-responsive embed-responsive-16by9 mb-3">
+                    <div class="embed-responsive embed-responsive-16by9 mb-3" style="max-width: 100%;">
                         <iframe width="560" height="315"
                                 src="https://www.youtube.com/embed/OH0bPI-V8Ps?&autoplay=1"frameborder="0"
                                 allowfullscreen></iframe>
