@@ -1,0 +1,15 @@
+.custom-bullet {
+    padding-left: calc(1.5rem + 30px); /* Adjust the value as needed */
+}
+
+.custom-bullet li {
+    margin-left: -1.5rem; /* Offset to accommodate bullet point */
+    padding-left: 1.5rem; /* Add padding to align text after bullet */
+    position: relative;
+}
+
+.custom-bullet li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+}
