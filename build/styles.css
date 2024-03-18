@@ -40,9 +40,11 @@ body {
     height: 100%;
 }
 .carousel-item img {
-    height: 800px; /* Adjust height as needed */
-    object-fit: cover;
+    max-width: 100%; /* Ensure image scales with container */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+    object-fit: contain; /* Maintain aspect ratio and fit entire image within container */
 }
+
 .carousel-text {
     background-color: #f8f9fa;
     padding: 20px;
