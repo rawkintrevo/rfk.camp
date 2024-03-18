@@ -47,3 +47,16 @@ body {
     background-color: #f8f9fa;
     padding: 20px;
 }
+
+
+.custom-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* This makes the image cover the area without stretching */
+}
+
+@media (max-width: 768px) {
+    .custom-img {
+        /* Adjustments for smaller screens can go here, if needed */
+    }
+}
