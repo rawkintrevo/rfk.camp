@@ -60,3 +60,10 @@ body {
         /* Adjustments for smaller screens can go here, if needed */
     }
 }
+
+img.d-block.w-100 {
+    width: 100vw; /* sets the image width to 100% of the viewport width */
+    height: auto; /* maintains the aspect ratio */
+    object-fit: cover; /* covers the area, may cut off some parts of the image */
+    max-width: none; /* removes max-width restriction */
+}
