@@ -69,3 +69,8 @@ img.d-block.w-100 {
     object-fit: cover; /* covers the area, may cut off some parts of the image */
     max-width: none; /* removes max-width restriction */
 }
+
+.accordion-item .embed-responsive-16by9 iframe {
+    width: 100%;
+    height: auto;
+}
