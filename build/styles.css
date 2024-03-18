@@ -70,7 +70,8 @@ img.d-block.w-100 {
     max-width: none; /* removes max-width restriction */
 }
 
-.accordion-item .embed-responsive-16by9 iframe {
+.accordion-item .accordion-body .embed-responsive iframe {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
+
