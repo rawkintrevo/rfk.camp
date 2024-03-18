@@ -75,5 +75,8 @@ img.d-block.w-100 {
     height: auto; /* Allow the height to adjust based on the aspect ratio */
     max-width: none; /* Remove max-width restriction */
     max-height: none; /* Remove max-height restriction */
+    display: block; /* Ensures iframe is displayed as block element */
+    margin: 0 auto; /* Centers the iframe horizontally */
 }
+
 
